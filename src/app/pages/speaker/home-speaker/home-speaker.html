@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-navbar color="header-speaker">
+        <ion-title>
+            <ion-title>Apresentacoes</ion-title>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg-style-speaker" >
+    <ion-list >
+        <ion-list-header style=" color : #ffffff !important;"  mode="ios">
+            Apresentacoes salvas
+        </ion-list-header>
+        <div *ngFor="let show of showList" style=" color : #ffffff">
+                <ion-item margin-vertical no-lines color="buttons-color" no lines (tap)="openShow(show)" margin-vertical>
+
+                        <p>{{show.name}}</p>
+                        <button ion-button icon-only float-right>Go</button>
+                </ion-item>
+
+        </div>
+    </ion-list>
+
+    <ion-fab bottom right>
+        <button ion-fab color="buttons-color">
+            <ion-icon name="add" (tap)="createShow()" ></ion-icon>
+        </button>
+    </ion-fab>
+</ion-content>

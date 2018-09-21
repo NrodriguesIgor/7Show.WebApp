@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-navbar color="header-speaker">
+        <ion-title>
+            <ion-title>Autenticação</ion-title>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg-style-speaker">
+    <ion-item class="item-trns">
+        <ion-label floating>Email</ion-label>
+        <ion-input class="item-trns" type="text" [(ngModel)]="email" id="password"></ion-input>
+    </ion-item>
+    <ion-item class="item-trns">
+        <ion-label  floating>Senha</ion-label>
+        <ion-input color="white" type="password" [(ngModel)]="password" id="password"></ion-input>
+    </ion-item>
+    <button margin-vertical color="buttons-color" ion-button block round (tap)="connect()">Entrar</button>
+    <button margin-vertical color="buttons-color" ion-button  round block (tap)="register()">Cadastrar-se</button>
+</ion-content>

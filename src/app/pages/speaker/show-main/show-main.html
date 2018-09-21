@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-navbar color="header-speaker">
+        <ion-title>
+            <ion-title>{{show.name}}</ion-title>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-style-speaker">
+    <div class="show-main-content">
+        <div class="timer-content">
+            <timer-component></timer-component>
+        </div>
+
+        <div class="body-content">
+
+            <ion-item color="buttons-color" no-lines (tap)="goToStream()" margin-vertical>
+                <ion-thumbnail item-start>
+                    <img src="assets/imgs/icon_stream.png">
+                </ion-thumbnail>
+                <h1 text-wrap>Compartilhar Apresentação</h1>
+            </ion-item>
+
+            <ion-item color="buttons-color" no-lines (tap)="goToQuestion()"  margin-vertical>
+                    <ion-thumbnail item-start>
+                        <img src="assets/imgs/icon_question.png">
+                    </ion-thumbnail>
+                    <h1>Perguntas</h1>
+            </ion-item>
+
+            <ion-item color="buttons-color" no-lines (tap)="goToAsk()"  margin-vertical>
+                    <ion-thumbnail item-start>
+                        <img src="assets/imgs/icon_ask.png">
+                    </ion-thumbnail>
+                    <h1>Perguntar</h1>
+            </ion-item>
+
+            <ion-item color="buttons-color" no-lines (tap)="goToAbout()"  margin-vertical>
+                    <ion-thumbnail item-start>
+                        <img src="assets/imgs/icon_about.png">
+                    </ion-thumbnail>
+                    <h1>Configurações</h1>
+            </ion-item>
+
+        </div>
+    </div>
+
+</ion-content>
